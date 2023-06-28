@@ -334,14 +334,14 @@ dims = 0
 
 if args.model == "mobilenetv2":
     dims = (1, 224, 224, 3)
-    model="6/saved_model-mb2_bs-32_dr-0.2_lr-0.0001_e50_fds-2.onnx"
+    model="Models/MobileNetV2/6/saved_model-mb2_bs-32_dr-0.2_lr-0.0001_e50_fds-2.onnx"
 
 elif args.model == "mnist":
     dims = (1, 28, 28, 1)
-    model="mnist/saved_model-mnist.onnx"
+    model="Models/MNIST/mnist.onnx"
 elif args.model == "alexnet":
     dims = (1, 224, 224, 3)
-    model="alexnet_224.onnx"
+    model="Models/Alexnet/alexnet_224.onnx"
 
 
 

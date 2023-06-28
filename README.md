@@ -5,62 +5,40 @@ An Undergraduate Student Project aiming to develop an add-on for videoconferenci
 ### Dataset Structure
 
  -Dataset\
- &emsp;|--test\
+ &emsp;|--A\
 	&emsp;&emsp;|--0000020.jpg\
 	&emsp;&emsp;|--0000020.xml\
  	&emsp;&emsp;...\
- &emsp;|--train\
+ &emsp;|--B\
       &emsp;&emsp;|--0000100.jpg\
       &emsp;&emsp;|--0000100.xml\
       &emsp;&emsp;...
-      
- -outputs\
- 	&emsp;&emsp;|--model.pth\
- 	&emsp;&emsp;|--train_loss_10.png\
-	&emsp;&emsp;|--valid_loss_10.png\
- 	&emsp;&emsp;...
-
- -src\
-  &emsp;&emsp;|--config.py\
-  &emsp;&emsp;|--datasets.py\
-  &emsp;&emsp;|--engine.py\
-  &emsp;&emsp;|--inf_single.py\
-  &emsp;&emsp;|--inf_video.py\
-  &emsp;&emsp;|--inf_batch.py
-  
- -test_data\
-  &emsp;|--0000984.jpg\
-  &emsp;&emsp;...\
- -test_data_video\
-  &emsp;...\
- -test_predictions\
-  &emsp;...
-  
- -requirements.txt
+      ...
  
-|Folder | Description |
+|File/Folder | Description |
 | --- | --- |
-| Dataset | contains the dataset |
-| outputs | contains the trained models, loss graphs and weights |
-| src | contains the main python code files |
-| test_data | contains images for inference |
-| test_data_video | contains videos for inference |
-| test_predictions | contains inference results |
+| Building Codes | Contains the Google Colab Notebooks used to build and train the models |
+| Models | Contains the trained models for MobileNetV2, AlexNet, and MNIST (Due to the large size, the AlexNet Model as well as all the other models are available [here](https://drive.google.com/drive/folders/1OVVqtgaf-XeDgLGElr0gqtXv2KwAHjHj?usp=sharing) |
+| main.py | is the main program for this project |
+| requirements.txt | Project required dependencies |
   
 ## Prerequisite/Setup
 1. Download and Install Python and Jupyter Notebook 
 2. Download and install **[OBS Studio](obsproject.com)** and its **[Virtual Camera Plug-in](https://obsproject.com/forum/resources/obs-virtualcam.949/)** in the same directory.
-3. Setup **OBS Studio**. Open the program. Navigate to _Sources_ > _+_ (Add) > Check _Make Sources Available_ > _OK_ > _Device_ > **OBS Virtual Camera** > _OK_. You can follow this[Youtube tutorial](https://youtu.be/fkKC1uSFeCo). 
+3. Setup **OBS Studio**. You can follow this **[Youtube tutorial](https://youtu.be/fkKC1uSFeCo)**. 
 4. Clone the Repository
 5. Download necessary libraries/modules/packages using `pip install -r requirements.txt`
-6. Change the model directories by changing the _model_ variable 
-7. Run
+6. Modify the model directories by changing the _model_ variable 
+7. Run the main program by following the instructions below:
   
 ## Code Execution
 To run the .py files, enter any of the following to the device's console :\
-    `python inf_batch.py -- model mobilenetv2` when using the mobilenetv2 model\
-    `python inf_batch.py -- model mnist` when using the MNIST model\
-    `python inf_batch.py -- model alexnet` when using the AlexNet model\
+    `python main.py -- model mobilenetv2` when using the mobilenetv2 model\
+    `python main.py -- model mnist` when using the MNIST model\
+    `python main.py -- model alexnet` when using the AlexNet model
+
+You can also simply run :
+    `python main.py` as the program defaults to the mobilenetv2 model
     
 ## Outputs and Graphs
 ### MobileNetV2

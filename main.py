@@ -140,7 +140,7 @@ def sys():
 
 
 
-	cap = cv2.VideoCapture("3-1.mp4")
+	cap = cv2.VideoCapture(0)
 	cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 	cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
@@ -304,8 +304,8 @@ def sys():
 							break
 
 						cv2.putText(image, f'FPS: {"%.2f" % fps}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, text_color, 2)
-						# cam.send(cv2.flip(image,1))
-						# cam.sleep_until_next_frame()
+						cam.send(cv2.flip(image,1))
+						cam.sleep_until_next_frame()
 						cv2.imshow('MediaPipe Hands', image)
 
 					except Exception as e:

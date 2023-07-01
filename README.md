@@ -20,9 +20,9 @@ An Undergraduate Student Project aiming to develop an add-on for videoconferenci
   
 ## Code Execution
 To run the .py files, enter any of the following to the device's console :\
-    `python main.py -- model mobilenetv2` when using the mobilenetv2 model\
-    `python main.py -- model mnist` when using the MNIST model\
-    `python main.py -- model alexnet` when using the AlexNet model
+    `python main.py --model mobilenetv2` when using the mobilenetv2 model\
+    `python main.py --model mnist` when using the MNIST model\
+    `python main.py --model alexnet` when using the AlexNet model
 
 You can also simply run :
     `python main.py` as the program defaults to the mobilenetv2 model

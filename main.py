@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jun 11 16:04:20 2023
 
-@author: Gabriel
-"""
 
 import mediapipe as mp
 import time
@@ -303,7 +298,7 @@ def sys():
 							exit()
 							break
 
-						cv2.putText(image, f'FPS: {"%.2f" % fps}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, text_color, 2)
+						# cv2.putText(image, f'FPS: {"%.2f" % fps}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, text_color, 2)
 						cam.send(cv2.flip(image,1))
 						cam.sleep_until_next_frame()
 						cv2.imshow('MediaPipe Hands', image)

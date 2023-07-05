@@ -26,7 +26,10 @@ To run the .py files, enter any of the following to the device's console :\
 
 You can also simply run :
     `python main.py` as the program defaults to the mobilenetv2 model
-    
+
+## Dataset
+The dataset used for this project is composed of 26 classes of letters A-Z of the Filipino Sign Language Alphabet. The dataset is available in this [Kaggle Repository](https://www.kaggle.com/datasets/japorton/fsl-dataset)
+
 ## Link/Reference
 This project is based on the following works:
 * [MNIST Model](https://github.com/chenson2018/APM-Project/blob/master/Final%20Materials/Static_Signs.ipynb?fbclid=IwAR1l7eApNeIa1lXFTH69hKjKG_qFd_WIacZY3FXmvuffWzT3zvx0IUcBEf8)
